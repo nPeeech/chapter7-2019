@@ -18,7 +18,18 @@
     var ctx = document.getElementById("tempchart");
     
     // TODO:0 ここに設定を入れる
-
+            // Your web app's Firebase configuration
+  			var firebaseConfig = {
+    		apiKey: "AIzaSyBMz7oKpBS91Wd5VbHnONPm7IDyw7-ZblI",
+    		authDomain: "matome-ff2e4.firebaseapp.com",
+    		databaseURL: "https://matome-ff2e4.firebaseio.com",
+    		projectId: "matome-ff2e4",
+    		storageBucket: "matome-ff2e4.appspot.com",
+    		messagingSenderId: "1007549120581",
+    		appId: "1:1007549120581:web:4719dd329e9c858c"
+  			};
+  			// Initialize Firebase
+  			firebase.initializeApp(firebaseConfig);
 
     var db = firebase.firestore()
     var initialData=[];
